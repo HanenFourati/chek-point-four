@@ -1,0 +1,535 @@
+/**************Generic css tags *****************/
+body{
+    color: rgb(163, 159, 159);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+li{
+    list-style-type: none;
+
+}
+a{
+   
+    text-decoration: none;
+    color: rgb(163, 159, 159);
+}
+select{
+    outline: 0;
+    overflow: hidden;
+    height: 50px;
+    background: #ffffff;
+    color: #000000;
+    border: #2c343c;
+    padding: 5px 3px 5px 10px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/***************** header css tags, ids and classes ******************/
+.header-container
+{   
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+.header-container:hover{
+    
+    -moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
+    -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+
+#logo-header-image
+{  
+    width: 100px;
+    height: 100px; 
+    width: 33%; 
+}
+#header-list{
+display: flex;
+align-content: flex-start;
+justify-content: space-evenly;
+padding: 1%;
+align-items: center;
+width: 33%;
+}
+#hl1{
+    color: rgb(8, 185, 162);
+
+}
+#hl1:hover{
+    color: rgb(8, 185, 162);
+
+}
+#hl2:hover{
+    color: rgb(8, 185, 162);
+}
+#hl3:hover{
+    color: rgb(8, 185, 162);
+}
+/**************** main css tags, ids and classes *************************/
+.main-container-section-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.main-container-section-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: rgb(8, 185, 162);
+}
+.paragraphs
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.para{
+    display: inline-block;
+    width: 35%;
+    padding: 15px;
+    line-height: 1.7;
+}
+
+
+/**boxes part css*/
+.boxes{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+#box1{
+    background-color: rgba(15, 216, 189); /* Green */
+    border: 2px solid rgba(15, 216, 189) ;
+    color: rgb(61, 59, 59);
+    border-radius: 15px;
+    width: 35%;
+    padding: 5px;
+    position: relative;
+    right: 0;
+    height: 400px;
+    animation-name:animationbox1;
+    animation-duration: 2s;
+}
+@keyframes animationbox1{
+    0%{background-color: rgba(15, 216, 189); top: 50px; bottom: 0px  }
+    25%{ background-color: rgba(15, 216, 189); top: 0px; bottom: 0px}
+}
+#box2{
+    background-color: rgb(70, 154, 250); /* Green */
+    border: 2px solid rgb(70, 154, 250) ;
+    color: rgb(61, 59, 59);
+    border-radius: 15px;
+    width: 35%;
+    padding: 5px;
+    position: relative;
+    right: 0;
+    height: 400px;
+    animation-name:animationbox2;
+    animation-duration: 2s;
+}
+@keyframes animationbox2{
+    0%{background-color: rgb(70, 154, 250) ; top: 50px; bottom: 0px  }
+    25%{ background-color: rgb(70, 154, 250) ; top: 0px; bottom: 0px}
+}
+.box1-containt{
+    display: inline-block;
+    width: 35%;
+    padding: 15px;
+    line-height: 1.7;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left:10%;
+    animation-name:animationtextbox1;
+    animation-duration: 3s;
+}
+@keyframes animationtextbox1{
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+.box1-containt-img1{
+    position: absolute;
+    top: 90%;
+    left:25%;
+    max-width:276px;
+    overflow:hidden;
+    animation-name:animationimgbox1;
+    animation-duration: 3s;
+}
+@keyframes animationimgbox1{
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+.box2-containt{
+    display: inline-block;
+    width: 35%;
+    padding: 15px;
+    line-height: 1.7;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left:55%;
+    animation-name:animationtextbox2;
+    animation-duration: 3s;
+}
+@keyframes animationtextbox2{
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+.box1-containt-img2{
+    position: absolute;
+    top: 90%;
+    left:69.8%;
+    max-width:276px;
+  overflow:hidden;
+  animation-name:animationimgbox2;
+  animation-duration: 3s;
+}
+@keyframes animationimgbox2{
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+#selectoption:hover{
+background-color:rgb(111, 236, 220);
+}
+
+/************* brand list css part**********/
+.brand-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 30px;
+}
+.brand-list-one{
+    color: rgb(8, 185, 162);
+    width: 20%;
+}
+.brand-list-two{
+   display: block;
+   width: 55%;
+   display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.listlinkbrand:hover path{
+   fill:  rgb(8, 185, 162);
+
+}
+
+/**green background css part**/
+
+.background-green-div{
+    height: 600px;
+    display: flex;
+    background-color:#e5faf8;   
+    position: relative;
+}
+.logo-image-zoom{
+      width : 400px; height : 300px;
+      margin-top: 300px; margin-left: 50px; 
+     
+}
+.green-bg-text{
+    position: absolute;
+    top: 170%;
+    left:10%;
+    display: inline-block;
+    width: 40%;
+}
+.whiteboxe1
+{   
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255) ; 
+    border-radius: 6px;
+    width: 10%;
+    height: 150px;
+    padding: 45px;
+    position: absolute;
+    top: 170%;
+    left:55%;
+    box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    animation-name:animationwhitebox1;
+    animation-duration: 1s;
+}
+@keyframes animationwhitebox1{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe2
+{   
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255) ; 
+    border-radius: 6px;
+    width: 10%;
+    height: 150px;
+    padding: 45px;
+    position: absolute;
+    top: 168%;
+    left:73%;
+    box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    animation-name:animationwhitebox2;
+    animation-duration: 2s;
+}
+@keyframes animationwhitebox2{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe3
+{   
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255) ; 
+    border-radius: 6px;
+    width: 10%;
+    height: 150px;
+    padding: 45px;
+    position: absolute;
+    top: 211%;
+    left:55%;
+    box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    animation-name:animationwhitebox3;
+    animation-duration: 3s;
+}
+@keyframes animationwhitebox3{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe4
+{   
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255) ; 
+    border-radius: 6px;
+    width: 10%;
+    height: 150px;
+    padding: 45px;
+    position: absolute;
+    top: 209%;
+    left:73%;
+    box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    animation-name:animationwhitebox4;
+animation-duration: 4s;
+}
+@keyframes animationwhitebox4{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe1-text{
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    top: 175%;
+    left:56%;
+    animation-name:animationwhitebox1t1;
+    animation-duration: 1s;
+}
+@keyframes animationwhitebox1t1{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe2-text{
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    top: 178%;
+    left:74%;
+    animation-name:animationwhitebox2t1;
+    animation-duration: 2s;
+}
+@keyframes animationwhitebox2t1{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe3-text{
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    top: 214%;
+    left:56%;
+    animation-name:animationwhitebox3t1;
+    animation-duration: 3s;
+}
+@keyframes animationwhitebox3t1{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+.whiteboxe4-text{
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+    top: 213%;
+    left:74%;
+    animation-name:animationwhitebox4t1;
+    animation-duration: 4s;
+}
+@keyframes animationwhitebox4t1{
+    from {
+        margin-top: 100%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+    
+}
+/************* second paragraphs *************/
+.Secondparagraphs
+{
+text-align: center;
+display: inline-block;
+padding: 100px;
+}
+/************** grid ****************/
+.grid-container-one{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 2%;
+}
+  .info{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .grid-info{
+width: 50%
+  }
+  .grid-container-two{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 2%;
+}
+.imgradious{
+    border-top-left-radius: 6px; border-top-right-radius: 6px;
+}
+.grid-box1:hover,.grid-box2:hover,.grid-box3:hover,.grid-box4:hover,.grid-box5:hover,.grid-box6:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.abutton{
+    background-color: rgb(18, 113, 238);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(18, 113, 238);
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px
+}
+.abutton:hover{
+border-color: rgb(59, 59, 238);
+background-color:  rgb(59, 59, 238);
+}
+/******************footer**************************/
+.footer-links{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    border-top: 2px solid lightgray;  
+    border-top-width: thin;
+    font-size: 12px;}
+.afooter{
+    color: rgb(1, 146, 236);
+}
+.afooter:hover{
+    text-decoration: underline;
+}
