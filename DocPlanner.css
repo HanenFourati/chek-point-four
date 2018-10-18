@@ -107,7 +107,7 @@ width: 33%;
 #box1{
     background-color: rgba(15, 216, 189); /* Green */
     border: 2px solid rgba(15, 216, 189) ;
-    color: rgb(61, 59, 59);
+    color:white;
     border-radius: 15px;
     width: 35%;
     padding: 5px;
@@ -124,11 +124,10 @@ width: 33%;
 #box2{
     background-color: rgb(70, 154, 250); /* Green */
     border: 2px solid rgb(70, 154, 250) ;
-    color: rgb(61, 59, 59);
+    color: white;
     border-radius: 15px;
     width: 35%;
     padding: 5px;
-    position: relative;
     right: 0;
     height: 400px;
     animation-name:animationbox2;
@@ -138,41 +137,17 @@ width: 33%;
     0%{background-color: rgb(70, 154, 250) ; top: 50px; bottom: 0px  }
     25%{ background-color: rgb(70, 154, 250) ; top: 0px; bottom: 0px}
 }
+
+#selectoption:hover{
+background-color:rgb(111, 236, 220);
+}
 .box1-containt{
-    display: inline-block;
-    width: 35%;
-    padding: 15px;
-    line-height: 1.7;
-    color: white;
-    position: absolute;
-    top: 65%;
-    left:10%;
     animation-name:animationtextbox1;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 @keyframes animationtextbox1{
     from {
-        margin-left: 100%;
-        width: 300%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-}
-.box1-containt-img1{
-    position: absolute;
-    top: 90%;
-    left:25%;
-    max-width:276px;
-    overflow:hidden;
-    animation-name:animationimgbox1;
-    animation-duration: 3s;
-}
-@keyframes animationimgbox1{
-    from {
-        margin-left: 100%;
+        margin-left: 10%;
         width: 300%;
       }
     
@@ -182,20 +157,12 @@ width: 33%;
       }
 }
 .box2-containt{
-    display: inline-block;
-    width: 35%;
-    padding: 15px;
-    line-height: 1.7;
-    color: white;
-    position: absolute;
-    top: 65%;
-    left:55%;
     animation-name:animationtextbox2;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 @keyframes animationtextbox2{
     from {
-        margin-left: 100%;
+        margin-left: 10%;
         width: 300%;
       }
     
@@ -204,30 +171,6 @@ width: 33%;
         width: 100%;
       }
 }
-.box1-containt-img2{
-    position: absolute;
-    top: 90%;
-    left:69.8%;
-    max-width:276px;
-  overflow:hidden;
-  animation-name:animationimgbox2;
-  animation-duration: 3s;
-}
-@keyframes animationimgbox2{
-    from {
-        margin-left: 100%;
-        width: 300%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-}
-#selectoption:hover{
-background-color:rgb(111, 236, 220);
-}
-
 /************* brand list css part**********/
 .brand-links{
     display: flex;
@@ -256,40 +199,42 @@ background-color:rgb(111, 236, 220);
 
 .background-green-div{
     height: 600px;
-    display: flex;
     background-color:#e5faf8;   
-    position: relative;
 }
-.logo-image-zoom{
-      width : 400px; height : 300px;
-      margin-top: 300px; margin-left: 50px; 
-     
+.partone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+.parttwo{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.txt-green{
+ width: 30%;
+ text-align: center;
+}
+.txt-icons-green-w{
+     color:rgb(26, 211, 149); 
+     font-size: 20px;}
 .green-bg-text{
-    position: absolute;
+    align-self: center;
     top: 170%;
     left:10%;
     display: inline-block;
-    width: 40%;
+    width: 50%;
 }
-.whiteboxe1
-{   
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255) ; 
-    border-radius: 6px;
-    width: 10%;
-    height: 150px;
-    padding: 45px;
-    position: absolute;
-    top: 170%;
-    left:55%;
-    box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
-    animation-name:animationwhitebox1;
-    animation-duration: 1s;
+.logo-image-zoom{
+    width: 400px;
+    height: 400px;
+    animation-name:animationimg;
+    animation-duration: 0s;
 }
-@keyframes animationwhitebox1{
+@keyframes animationimg{
     from {
-        margin-top: 100%;
+        margin-top: 0%;
         
       }
     
@@ -297,26 +242,44 @@ background-color:rgb(111, 236, 220);
         margin-top: 0%;
         
       }
-    
 }
-.whiteboxe2
-{   
+
+.whiteboxe1{
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255) ; 
     border-radius: 6px;
-    width: 10%;
-    height: 150px;
-    padding: 45px;
-    position: absolute;
-    top: 168%;
-    left:73%;
+    width: 200px;
+    height: 200px; 
     box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+   text-align: center;
+   animation-name:animationwhitebox1;
+   animation-duration: 1s;
+}
+@keyframes animationwhitebox1{
+    from {
+        margin-top: 10%;
+        
+      }
+    
+      to {
+        margin-top: 0%;
+        
+      }
+}
+.whiteboxe2{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255) ; 
+    border-radius: 6px;
+    width: 200px;
+    height: 200px; 
+    box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    text-align: center;
     animation-name:animationwhitebox2;
     animation-duration: 2s;
 }
 @keyframes animationwhitebox2{
     from {
-        margin-top: 100%;
+        margin-top: 10%;
         
       }
     
@@ -324,26 +287,21 @@ background-color:rgb(111, 236, 220);
         margin-top: 0%;
         
       }
-    
 }
-.whiteboxe3
-{   
+.whiteboxe3{
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255) ; 
     border-radius: 6px;
-    width: 10%;
-    height: 150px;
-    padding: 45px;
-    position: absolute;
-    top: 211%;
-    left:55%;
+    width: 200x;
+    height: 200px; 
     box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    text-align: center;
     animation-name:animationwhitebox3;
     animation-duration: 3s;
 }
 @keyframes animationwhitebox3{
     from {
-        margin-top: 100%;
+        margin-top: 10%;
         
       }
     
@@ -351,26 +309,21 @@ background-color:rgb(111, 236, 220);
         margin-top: 0%;
         
       }
-    
 }
-.whiteboxe4
-{   
+.whiteboxe4{
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255) ; 
     border-radius: 6px;
-    width: 10%;
-    height: 150px;
-    padding: 45px;
-    position: absolute;
-    top: 209%;
-    left:73%;
+    width: 200x;
+    height: 200px; 
     box-shadow: 0 2px 4px 0 rgba(27, 161, 83, 0.1);
+    text-align: center;
     animation-name:animationwhitebox4;
-animation-duration: 4s;
+    animation-duration: 4s;
 }
 @keyframes animationwhitebox4{
     from {
-        margin-top: 100%;
+        margin-top: 10%;
         
       }
     
@@ -378,95 +331,6 @@ animation-duration: 4s;
         margin-top: 0%;
         
       }
-    
-}
-.whiteboxe1-text{
-    text-align: center;
-    display: inline-block;
-    width: 15%;
-    position: absolute;
-    top: 175%;
-    left:56%;
-    animation-name:animationwhitebox1t1;
-    animation-duration: 1s;
-}
-@keyframes animationwhitebox1t1{
-    from {
-        margin-top: 100%;
-        
-      }
-    
-      to {
-        margin-top: 0%;
-        
-      }
-    
-}
-.whiteboxe2-text{
-    text-align: center;
-    display: inline-block;
-    width: 15%;
-    position: absolute;
-    top: 178%;
-    left:74%;
-    animation-name:animationwhitebox2t1;
-    animation-duration: 2s;
-}
-@keyframes animationwhitebox2t1{
-    from {
-        margin-top: 100%;
-        
-      }
-    
-      to {
-        margin-top: 0%;
-        
-      }
-    
-}
-.whiteboxe3-text{
-    text-align: center;
-    display: inline-block;
-    width: 15%;
-    position: absolute;
-    top: 214%;
-    left:56%;
-    animation-name:animationwhitebox3t1;
-    animation-duration: 3s;
-}
-@keyframes animationwhitebox3t1{
-    from {
-        margin-top: 100%;
-        
-      }
-    
-      to {
-        margin-top: 0%;
-        
-      }
-    
-}
-.whiteboxe4-text{
-    text-align: center;
-    display: inline-block;
-    width: 15%;
-    position: absolute;
-    top: 213%;
-    left:74%;
-    animation-name:animationwhitebox4t1;
-    animation-duration: 4s;
-}
-@keyframes animationwhitebox4t1{
-    from {
-        margin-top: 100%;
-        
-      }
-    
-      to {
-        margin-top: 0%;
-        
-      }
-    
 }
 /************* second paragraphs *************/
 .Secondparagraphs
@@ -498,10 +362,13 @@ width: 50%
     padding: 2%;
 }
 .imgradious{
-    border-top-left-radius: 6px; border-top-right-radius: 6px;
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
 }
 .grid-box1:hover,.grid-box2:hover,.grid-box3:hover,.grid-box4:hover,.grid-box5:hover,.grid-box6:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.grid-box1,.grid-box2,.grid-box3,.grid-box4,.grid-box5,.grid-box6{
+    border-top-left-radius: 65px; border-top-right-radius: 15px;
 }
 .abutton{
     background-color: rgb(18, 113, 238);
@@ -515,7 +382,7 @@ width: 50%
     border-radius: 8px
 }
 .abutton:hover{
-border-color: rgb(59, 59, 238);
+border-color: rgb(71, 71, 204);
 background-color:  rgb(59, 59, 238);
 }
 /******************footer**************************/
@@ -532,4 +399,154 @@ background-color:  rgb(59, 59, 238);
 }
 .afooter:hover{
     text-decoration: underline;
+}
+/****************** responsive for Pixel 2 XL ***************/
+@media screen and (max-width: 1024px) {
+    /* For mobile phones: */
+    .brand-list-one{
+      font-size: 16px;
+      text-align: center;
+    }
+    #box1{
+     margin-left: 5%;
+     width:100%;
+     height: 700px;
+    }
+    .box1-containt{
+        font-size: 35px;
+    }
+    .selectoption{
+        font-size: 50px;
+        padding: 90px 90px;
+        
+    }
+    .image-screen-one{
+        width: 600px;
+        height:  300px;
+    }
+    #box2{
+     margin-left: 5%;
+     width:100%;
+     height: 700px;
+      }
+      .box2-containt{
+        font-size: 35px;
+    }
+    .brand-list-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-resp{
+        width:250px;
+        height: 100px;
+    }
+    .brand-list-one{
+        width: 100%;
+    }
+   
+    .green-bg-text{
+        margin-top: 60%;
+        margin-left: 40%;
+        font-size: 35px;
+        text-align: center;
+    }
+    .background-green-div{
+      height: 2000px;
+      width: 100%;
+    }
+  .txt-green{
+      font-size: 35px;
+      width: 70%;
+     
+  }
+    .paragraphs{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .para {
+        width: 100%;
+        text-align: center;
+
+    }
+    .Secondparagraphs{
+        font-size: 35px;
+        text-align: center;
+    }
+    .background-green-div{
+        height: 2400px; 
+    }
+    .parttwo{
+        display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+  }
+  .partone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+    .whiteboxe1{
+    width: 400px;
+    height: 400px; 
+    font-size: 40px;
+    }
+    .img-icons-green{
+        width: 80px; 
+        height: 80px;
+    }
+    .txt-icons-green-w{
+ font-size: 40px;
+    }   
+     .whiteboxe2{
+        width: 400px;
+        height: 400px; 
+        font-size: 40px;
+        }
+        .whiteboxe3{
+            width: 400px;
+            height: 400px; 
+            font-size: 40px;
+            }
+            .whiteboxe4{
+                width: 400px;
+                height: 400px;
+                font-size: 40px; 
+                }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .grid-container-one{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .grid-container-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-links{
+       font-size: 35px;
+    }
+    #header-list{
+        width: 70%;
+        font-size: 35px;
+    }
+    .grid-box1,.grid-box2,.grid-box3,.grid-box4,.grid-box5,.grid-box6{
+      width: 100%;
+    }
+    .img-grid{
+        width: 90%;
+    }
+    .info{
+     font-size: 35px;
+    }
+    .abutton{
+        padding: 20px 20px;
+        font-size: 35px;
+    }
+
 }
