@@ -32,16 +32,12 @@ select{
     align-content: center;
     justify-content: space-around;
     padding: 5px;
-    position: sticky;
+    position: fixed;
     top: 0;
-}
-.header-container:hover{
-    
     -moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
     -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 }
-
 #logo-header-image
 {  
     width: 100px;
@@ -50,7 +46,6 @@ select{
 }
 #header-list{
 display: flex;
-align-content: flex-start;
 justify-content: space-evenly;
 padding: 1%;
 align-items: center;
@@ -72,16 +67,13 @@ width: 33%;
 }
 /**************** main css tags, ids and classes *************************/
 .main-container-section-one{
-    display: flex;
-    align-items: center;
+    display: flex;  
     justify-content: center;
-    padding: 5px;
+    padding-top: 15%;
 }
 .main-container-section-two{
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 5px;
     color: rgb(8, 185, 162);
 }
 .paragraphs
@@ -91,7 +83,7 @@ width: 33%;
     justify-content: space-evenly;
 }
 .para{
-    display: inline-block;
+    
     width: 35%;
     padding: 15px;
     line-height: 1.7;
@@ -111,7 +103,6 @@ width: 33%;
     border-radius: 15px;
     width: 35%;
     padding: 5px;
-    position: relative;
     right: 0;
     height: 400px;
     animation-name:animationbox1;
@@ -336,19 +327,16 @@ background-color:rgb(111, 236, 220);
 .Secondparagraphs
 {
 text-align: center;
-display: inline-block;
 padding: 100px;
 }
 /************** grid ****************/
 .grid-container-one{
     display: flex;
-    align-items:center;
     justify-content: space-around;
     padding: 2%;
 }
   .info{
     display: flex;
-    align-content: space-between;
     justify-content: space-between;
     align-items: baseline;
   }
@@ -378,7 +366,6 @@ width: 50%
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     border-radius: 8px
 }
 .abutton:hover{
@@ -389,7 +376,6 @@ background-color:  rgb(59, 59, 238);
 .footer-links{
     width: 100%;
     text-align: center;
-    display: inline-block;
     padding: 20px;
     border-top: 2px solid lightgray;  
     border-top-width: thin;
